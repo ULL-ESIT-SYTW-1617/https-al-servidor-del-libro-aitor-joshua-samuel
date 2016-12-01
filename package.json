@@ -1,0 +1,27 @@
+{
+  "name": "https-al-servidor-del-libro-aitor-joshua-samuel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-aitor-joshua-samuel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-aitor-joshua-samuel/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-aitor-joshua-samuel#readme",
+  "dependencies": {
+    "le-acme-core": "^2.0.7",
+    "le-challenge-fs": "^2.0.8",
+    "le-sni-auto": "^2.1.0",
+    "le-store-certbot": "^2.0.3",
+    "letsencrypt": "^2.1.8",
+    "letsencrypt-express": "^2.0.5"
+  }
+}
