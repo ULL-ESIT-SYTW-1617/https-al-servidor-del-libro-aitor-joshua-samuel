@@ -1,17 +1,20 @@
-'use strict';
+var fs = require("fs");
+var express = require("express");
+var https = require('https');
 
-require('letsencrypt-express').create({
+var app = express();
 
-  server: 'staging'
 
-, email: 'john.doe@example.com'
+// Hello World
+app.get('/', function(req, res) {
+    res.send('Hello World!');
+});
 
-, agreeTos: true
-
-, approveDomains: [ 'example.com' ]
-
-, app: require('express')().use('/', function (req, res) {
-    res.end('Hello, World!');
-  })
-
-}).listen(80, 443);
+https.createServer({
+        key: fs.readFileSync('./10.6.128.174.key'),
+        cert: fs.readFileSync('./10.6.128.174.crt'),
+        passphrase: 'sytw'
+    }, app)
+    .listen(8080, function() {
+        console.log('Secure Server listening on port ' + 8080);
+    });
