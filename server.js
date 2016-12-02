@@ -1,8 +1,8 @@
 var https = require('https');
 var fs = require('fs');
 var options = {
-  key: fs.readFileSync('10.6.128.174.key'),
-  cert: fs.readFileSync('10.6.128.174.crt'),
+  key: fs.readFileSync('./keys/10.6.128.174.key'),
+  cert: fs.readFileSync('./keys/10.6.128.174.crt'),
   passphrase: 'sytw'
 };
 

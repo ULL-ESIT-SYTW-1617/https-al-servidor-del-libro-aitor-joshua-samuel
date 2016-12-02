@@ -11,8 +11,8 @@ app.get('/', function(req, res) {
 });
 
 https.createServer({
-        key: fs.readFileSync('./10.6.128.174.key'),
-        cert: fs.readFileSync('./10.6.128.174.crt'),
+        key: fs.readFileSync('./keys/10.6.128.174.key'),
+        cert: fs.readFileSync('./keys/10.6.128.174.crt'),
         passphrase: 'sytw'
     }, app)
     .listen(8080, function() {
