@@ -12,20 +12,20 @@
 
 * Ponemos pass
 
-Creamos el servidor que será similar al siguiente:
+* Los certificados ya vienen generados con cada servidor.
 
-```Javascript
-var https = require('https');
-var fs = require('fs');
+##Autores
 
-var options = {
-  key: fs.readFileSync('localhost.key'),
-  cert: fs.readFileSync('localhost.crt')
-  passphrase: 'PASS ELEGIDA'
-};
+1. [Aitor Bernal Falcón](http://chinegua.github.io/)
+2. [Samuel Ramos Barroso](http://losnen.github.io/)
+3. [Joshua Pérez García](http://joshuape.github.io/)
 
-https.createServer(options, function (req, res) {
-  res.writeHead(200);
-  res.end("¡Responidiendo por SSL!\n");
-}).listen(8080);
-```
+##Repositorio
+
+* [Repositorio de entrega del main](https://github.com/ULL-ESIT-SYTW-1617/practica-plugins-heroku-aitor-joshua-samuel)
+* [Repositorio de entrega del plugin iaas](https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-iaas-ull-es-aitor-joshua-samuel)
+* [Enlace a NPM del main](https://www.npmjs.com/package/gitbook-start-aitor-joshua-samuel)
+* [Enlace a NPM del plugin iaas](https://www.npmjs.com/package/gitbook-start-iaas-ull-es-aitor-joshua-samuel)
+
+##Enlaces de interés
+* [La práctica en gitbook](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicassl.html)
